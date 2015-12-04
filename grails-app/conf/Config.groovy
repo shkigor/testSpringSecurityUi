@@ -135,3 +135,17 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 
 // Give an opportunity User to logout with GET request
 grails.plugin.springsecurity.logout.postOnly = false
+
+//Settings for service sending email
+grails {
+    mail {
+        host = "smtp.gmail.com"
+        port = 465
+        username = "testWiDone@gmail.com"
+        password = "wilist123DLW18c"
+        props = ["mail.smtp.auth":"true",
+                 "mail.smtp.socketFactory.port":"465",
+                 "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+                 "mail.smtp.socketFactory.fallback":"false"]
+    }
+}
